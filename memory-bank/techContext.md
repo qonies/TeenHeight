@@ -19,7 +19,7 @@
 - 实际开发环境为 Node v24.13.0 + npm 11；`npm install` 时会有 EBADENGINE 警告（个别传递依赖声明旧 engine），可忽略，安装与测试均正常。
 - npm 有 `electron_mirror` 用户配置警告，可忽略。
 - PowerShell 下 npm 输出可能被 shell integration 截断，必要时 `npm test > file 2>&1` 再读文件。
-- Git 仓库已 init 但从未提交（master 无 commit），所有文件处于 untracked 状态。
+- Git 仓库：已创建 GitHub 公开仓库 **qonies/TeenHeight**（origin = https://github.com/qonies/TeenHeight.git），首次提交 240d544（v0.2.1 基线），main 分支已设上游跟踪。
 
 ## 文件地图
 ```
