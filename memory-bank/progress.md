@@ -20,6 +20,7 @@
 - [x] 校验增强：新增 `invalid` code（非数值提示"需为有效数值"）；孩子身高补 `too_precise`（1 位小数）校验（VAL-18）
 - [x] 错误提示中文化：validate.ts FIELD_LABELS/fieldLabel，message 自包含中文；UI 不再拼接英文 field key
 - [x] 文档一致性：测试文档 v1.5 删除残留 MAP-01~05；需求文档 v0.5 更新 §4.2/§4.3.2/§4.1.2；package.json 0.2.1
+- [x] 开源发布配套：LICENSE（MIT）+ README.md（功能/方法/数据来源/隐私/快速开始），package.json 声明 license: MIT
 
 ## 测试基线（最近一次全量运行）
 - `npm run typecheck` ✅；`npm test` ✅ 9 文件 111 用例全过；`npm run build` ✅

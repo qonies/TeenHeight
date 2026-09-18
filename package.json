@@ -2,6 +2,7 @@
   "name": "child-height-predictor",
   "version": "0.2.1",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "description": "基于父母/亲属身高与儿童生长标准（WHO/中国）的子女成年身高预测（纯本地计算）",
   "scripts": {

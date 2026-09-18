@@ -26,6 +26,7 @@
 ## 文件地图
 ```
 需求文档.md（v0.5）/ 测试用例文档.md（v1.5）   # 需求与测试基准
+README.md / LICENSE（MIT）                     # 仓库说明与开源许可（2026-09-18 添加）
 index.html / vite.config.ts / tsconfig.json
 src/core/   predict.ts(编排) types.ts validate.ts constants.ts
             mph.ts cmh.ts khamis-roche.ts family.ts lms.ts growth.ts
