@@ -19,7 +19,9 @@
 - 实际开发环境为 Node v24.13.0 + npm 11；`npm install` 时会有 EBADENGINE 警告（个别传递依赖声明旧 engine），可忽略，安装与测试均正常。
 - npm 有 `electron_mirror` 用户配置警告，可忽略。
 - PowerShell 下 npm 输出可能被 shell integration 截断，必要时 `npm test > file 2>&1` 再读文件。
-- Git 仓库：已创建 GitHub 公开仓库 **qonies/TeenHeight**（origin = https://github.com/qonies/TeenHeight.git），首次提交 240d544（v0.2.1 基线），main 分支已设上游跟踪。
+- Git 仓库：已创建 GitHub 公开仓库 **qonies/TeenHeight**（origin = https://github.com/qonies/TeenHeight.git），main 分支已设上游跟踪（origin/main）。
+- **Git 环境注意**：PATH 中 cygwin git（D:\AppDev\cygwin64\bin\git.exe，2.34.1）优先于 Git for Windows，且其全局配置 /home/tony/.gitconfig 不存在 → HTTPS 推送会因凭据交互挂起。解决：本仓库已配置 `credential.helper = "!gh auth git-credential"`（仓库级，使用 gh 的 keyring 凭据）。若推送卡住，改用 `"C:\Program Files\Git\cmd\git.exe"`。
+- PowerShell 会把 git 写入 stderr 的进度信息当作 NativeCommandError 中断命令链，验证结果请以 `git status -sb` / `git ls-remote` 为准。
 
 ## 文件地图
 ```
